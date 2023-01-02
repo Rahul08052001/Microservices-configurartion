@@ -1,1 +1,8 @@
-
+eureka:
+  instance:
+    ip-address: true
+  client:
+    fetch-registry: true         # It has to register itself as client
+    register-with-eureka: true    #It has to fetch as client
+    service-url:
+      defaultZone : http://localhost:8761/eureka    #This service will use this url inorder to register with server... 
